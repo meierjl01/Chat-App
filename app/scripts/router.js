@@ -5,7 +5,7 @@ import Session from './session';
 import Message from './message';
 import renderLogin from './login';
 import renderChat from './chat';
-import sendMessage from './sendmessage';
+import renderMessages from './rendermessage';
 
 
 let session = new Session();
@@ -21,15 +21,16 @@ const routerSettings = {
       $('.header').empty();
       $('.chat-area').empty();
       $('.footer').empty();
-      console.log('rendering login');
+      // console.log('rendering login');
       renderLogin(session);
     },
     renderChat: () => {
       $('.header').empty();
       $('.chat-area').empty();
       $('.footer').empty();
-      console.log('rendering chat');
+      // console.log('rendering chat');
       renderChat(session);
+      renderMessages(session);
     },
 
     render404: () => {

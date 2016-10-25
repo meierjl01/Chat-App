@@ -8,6 +8,7 @@ function renderChat(session) {
 
     var writeMessage = $(`
     <form>
+    <ul>All Messages</ul>
     <div><input class ="message" type="text" placeholder="New Message"></div>
     <div><input class="submit" type="submit" value="Submit"></div>
     </form>
@@ -18,7 +19,7 @@ function renderChat(session) {
       var body = writeMessage.find('.message').val();
       let newMessage = new Message(session.userName, body, new Date());
       console.log('clicked button');
-      window.alert('Your message has been saved');
+      // window.alert('Your message has been saved');
       newMessage.save();
     });
 }
