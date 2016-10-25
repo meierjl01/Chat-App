@@ -1,5 +1,4 @@
 import $ from 'jquery';
-// import renderChat from './chat';
 
 function renderLogin(session) {
     var header = $('.header').append(`
