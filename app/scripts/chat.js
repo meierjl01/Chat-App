@@ -3,7 +3,7 @@ import Session from './session';
 import Message from './message';
 
 function renderChat(session) {
-    var greeting = `Welcome, ${session.userName}!`;
+    var greeting = `<h1>Welcome, ${session.userName}!</h1>`;
     $('.header').append(greeting);
 
     var writeMessage = $(`

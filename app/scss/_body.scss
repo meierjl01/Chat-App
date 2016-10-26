@@ -1,0 +1,18 @@
+body {
+  background: #005555;
+  color: #9A9A9A;
+  text-align: center;
+  font-family: 'sans-serif';
+
+  .message {
+    width: 24em;
+    height: 14em;
+    text-align: center
+  }
+
+  li {
+    list-style-type: none;
+    text-align: left;
+    padding: .5em;
+  }
+}
