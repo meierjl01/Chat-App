@@ -1,6 +1,7 @@
 import $ from 'jquery';
 import Session from './session';
 import Message from './message';
+import moment from 'moment';
 
 function renderMessages(session) {
     var ul = $('ul');
@@ -40,7 +41,7 @@ function renderMessages(session) {
     $.ajax(settings);
 }
 
-//set interval -- tried this in multiple places and it gives me errors.
+//set interval -- tried this in multiple places and it gives me errors saying userName isn't defined. This was working when I left the school today. I had Max help me get it to work and not throw any errors. Not sure what happened between now and then.
 // setInterval(function() {
 //     renderMessages();
 // }, 1000);
